@@ -1,112 +1,109 @@
-# 🧠 Cybersecurity Project Intelligence Dashboard (CPID)
+# Cybersecurity Project Intelligence Dashboard (CPID)
 
-The **Cybersecurity Project Intelligence Dashboard (CPID)** is a backend-only meta-tracker for cybersecurity project pipelines. It monitors project health, detects anomalies, and forecasts risks based on real-time data.
-
-Think of it as the **“SIEM of Project Management”** for agile cybersecurity teams.
-
----
-
-## 🚀 Features
-
-- 📥 Log-based data collection (Jira/Trello/GitHub – simulated)
-- 📊 Metrics engine (velocity, contributor stats, risk scores)
-- 🚨 Anomaly detection (e.g. sudden velocity drops, churn)
-- 🔮 Forecasting engine for future milestone outcomes
-- 📝 Audit & compliance logging with hash tracing
+> **Real-time risk scoring and audit intelligence for cybersecurity projects.**  
+> Imagine GitHub + ISO27001 compliance + AI anomaly detection — fully automated.
 
 ---
 
-## 🏗️ System Architecture
+## Overview
+
+**CPID** is a smart pipeline that ingests development activity (e.g., GitHub logs), calculates behavioral metrics, detects anomalies using both statistical and ML models, forecasts risk trends, and auto-generates audit & ISMS reports for compliance visibility.
+
+### Why It Matters
+
+- Prevent security debt by catching risky behaviors early
+- Predict future compliance drifts using real data
+- Auto-generate logs for ISO 27001/NIS2 readiness
+- ML-powered anomaly detection (via River)
+
+---
+
+## Features
+
+| Phase | Description |
+|-------|-------------|
+| **Phase 1** | Log ingestion + GitHub normalization |
+| **Phase 2** | Risk metric calculation (velocity, volatility, reliability) |
+| **Phase 3** | Anomaly detection (Z-score + River ML model auto-tuning) |
+| **Phase 4** | Risk forecasting using historical metrics |
+| **Phase 5** | Audit report generation (JSON + human-readable log) |
+| **Phase 6** | ISMS Control Mapping (ISO27001, NIS2) |
+
+---
+
+## Project Structure
 
 ```
-        Raw Logs
-          ↓
-+------------------+
-| Collector        |
-| (Phase 1)        |
-+------------------+
-          ↓
-+------------------+
-| Metrics Engine   |
-| (Phase 2)        |
-+------------------+
-          ↓
-+------------------+
-| Anomaly Engine   |
-| (Phase 3)        |
-+------------------+
-          ↓
-+------------------+
-| Forecast Engine  |
-| (Phase 4)        |
-+------------------+
-          ↓
-+------------------+
-| Audit Logger     |
-| (Phase 5)        |
-+------------------+
+CPID/
+├── core/                    # Phase scripts (invoked by CLI)
+├── engine/                  # Logic modules (metrics, normalizer, ML, etc.)
+├── models/                  # Saved River ML model
+├── metrics/                 # Output: scores, anomalies, forecasts
+├── logs/                    # Generated audit logs
+├── data/normalized/         # Parsed GitHub logs
+├── utils/                   # Logging utilities
+├── cpid.py                  # Main CLI runner
 ```
 
 ---
 
-## ▶️ How to Run
+## Usage
+
+Run the full pipeline:
 
 ```bash
-# Clone & enter the repo
-git clone https://github.com/<your-username>/cpid.git
-cd cpid
+python cpid.py run all
+```
 
-# (Optional) Create virtual environment
-python -m venv venv
-venv\Scripts\activate  # Windows
-# or
-source venv/bin/activate  # Linux/macOS
+Run a specific phase:
 
-# Install dependencies
-pip install -r requirements.txt
-
-# Run all phases
-python run_all.py
+```bash
+python cpid.py run phase3
 ```
 
 ---
 
-## 📁 Folder Structure
+## Intelligence Stack
 
-```
-cpid/
-├── data/              # Raw + normalized logs
-├── engine/            # Phase modules: collector, metrics, anomaly, forecast
-├── logs/              # Audit logs
-├── metrics/           # Output results
-├── utils/             # Logger, configs
-├── run_all.py         # Orchestration script
-├── run_phase*.py      # Individual phase runners
-├── requirements.txt
-└── README.md
-```
+- Metric Engine: Velocity, change size, contributor reliability
+- Hybrid Anomaly Detection:
+  - Statistical Z-Score
+  - ML-based classifier (River: Logistic Regression + StandardScaler)
+- Forecasting: Project risk trends (future sprints)
+- Audit Logger: Merges anomaly & forecast into readable and machine-readable audit logs
+- ISMS Map: Projects flagged to ISO27001 controls (A.12, A.17, etc.)
 
 ---
 
-## 📈 Sample Outputs
+## Sample Output
 
-- `metrics/project_scores.json` → Velocity, risk, contributors
-- `metrics/anomaly_flags.json` → Flags for suspicious behavior
-- `metrics/forecast.json` → Predicted project success/failure
-- `logs/project_audit.log` → Audit trail (timestamped, hashed)
-
----
-
-## 🧩 Future Enhancements
-
-- 🌐 API endpoints (Flask/FastAPI)
-- 📊 Web dashboard frontend (React/Vue)
-- 🧠 ML model auto-tuning using `river`
-- 🔗 Blockchain-ready audit logging
+- `metrics/project_scores.json`
+- `metrics/anomaly_flags.json`
+- `metrics/forecast.json`
+- `logs/project_audit.log`
+- `metrics/isms_map.json`
 
 ---
 
-## 🧑‍💻 Author
+## Future Work
 
-Built by Kelechi Okpala, 2025  
-Cybersecurity + AI-Driven Infrastructure Enthusiast  
+- GitHub Actions CI/CD to audit all commits
+- Slack/Email anomaly alerts
+- Web dashboard
+- GitHub App with webhook push triggers
+
+---
+
+## License
+
+MIT License
+
+---
+
+## Maintainer
+
+**Kelechi Okpala** – Helsinki, Finland  
+Cybersecurity Student & Enthusiast
+[GitHub @kaycee1771](https://github.com/kaycee1771)
+
+---

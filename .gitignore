@@ -14,20 +14,7 @@ env/
 .vscode/
 .idea/
 
-
-*.log
-logs/
-data/raw_logs/
-data/normalized/
-metrics/
-
 __pycache__/
 *.pyc
 .env/
 .vscode/
-*.log
-*.pkl
-models/
-data/normalized/
-metrics/
-logs/

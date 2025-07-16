@@ -6,6 +6,11 @@ from core.phase4_forecast import run as phase4
 from core.phase5_audit import run as phase5
 from core.isms_mapper import run as phase6
 
+import os
+
+os.makedirs("metrics", exist_ok=True)
+os.makedirs("logs", exist_ok=True)
+
 def run_all():
     print("Running Full CPID Pipeline\n")
     phase1()

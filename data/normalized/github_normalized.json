@@ -1,0 +1,35 @@
+[
+  {
+    "project_id": "cybersec-core",
+    "timestamp": "2025-06-01T12:00:00Z",
+    "source": "github",
+    "milestone": "sprint-1",
+    "ticket_id": "abc123",
+    "status": "committed",
+    "contributor": "alice",
+    "change_size": 160,
+    "risk_tag": "review"
+  },
+  {
+    "project_id": "cybersec-core",
+    "timestamp": "2025-06-07T10:00:00Z",
+    "source": "github",
+    "milestone": "sprint-2",
+    "ticket_id": "def456",
+    "status": "committed",
+    "contributor": "bob",
+    "change_size": 300,
+    "risk_tag": "none"
+  },
+  {
+    "project_id": "cybersec-core",
+    "timestamp": "2025-06-14T15:00:00Z",
+    "source": "github",
+    "milestone": "sprint-3",
+    "ticket_id": "ghi789",
+    "status": "committed",
+    "contributor": "alice",
+    "change_size": 35,
+    "risk_tag": "review"
+  }
+]

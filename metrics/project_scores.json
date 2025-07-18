@@ -1,0 +1,44 @@
+[
+  {
+    "project_id": "cybersec-core",
+    "milestone": "sprint-1",
+    "velocity": 1.0,
+    "avg_change_size": 160.0,
+    "contributors": {
+      "alice": {
+        "commits": 1,
+        "avg_change": 160.0
+      }
+    },
+    "reliability_score": 1.0,
+    "risk_score": 0.45
+  },
+  {
+    "project_id": "cybersec-core",
+    "milestone": "sprint-2",
+    "velocity": 1.0,
+    "avg_change_size": 300.0,
+    "contributors": {
+      "bob": {
+        "commits": 1,
+        "avg_change": 300.0
+      }
+    },
+    "reliability_score": 1.0,
+    "risk_score": 0.57
+  },
+  {
+    "project_id": "cybersec-core",
+    "milestone": "sprint-3",
+    "velocity": 1.0,
+    "avg_change_size": 35.0,
+    "contributors": {
+      "alice": {
+        "commits": 1,
+        "avg_change": 35.0
+      }
+    },
+    "reliability_score": 1.0,
+    "risk_score": 0.46
+  }
+]

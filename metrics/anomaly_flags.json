@@ -1,0 +1,38 @@
+[
+  {
+    "project_id": "cybersec-core",
+    "milestone": "sprint-1",
+    "flags": [],
+    "anomaly_score": 0,
+    "ml_predicted_anomaly": 0,
+    "ml_confidence_features": {
+      "velocity": 1.0,
+      "avg_change_size": 160.0,
+      "reliability_score": 1.0
+    }
+  },
+  {
+    "project_id": "cybersec-core",
+    "milestone": "sprint-2",
+    "flags": [],
+    "anomaly_score": 0,
+    "ml_predicted_anomaly": 0,
+    "ml_confidence_features": {
+      "velocity": 1.0,
+      "avg_change_size": 300.0,
+      "reliability_score": 1.0
+    }
+  },
+  {
+    "project_id": "cybersec-core",
+    "milestone": "sprint-3",
+    "flags": [],
+    "anomaly_score": 0,
+    "ml_predicted_anomaly": 0,
+    "ml_confidence_features": {
+      "velocity": 1.0,
+      "avg_change_size": 35.0,
+      "reliability_score": 1.0
+    }
+  }
+]

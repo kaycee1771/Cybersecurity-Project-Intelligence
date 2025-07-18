@@ -1,0 +1,38 @@
+[
+  {
+    "project_id": "cybersec-core",
+    "milestone": "sprint-1",
+    "commit_id": "abc123",
+    "author": "alice",
+    "committer": "alice",
+    "message": "initial commit",
+    "files_changed": 3,
+    "lines_added": 150,
+    "lines_deleted": 10,
+    "timestamp": "2025-06-01T12:00:00Z"
+  },
+  {
+    "project_id": "cybersec-core",
+    "milestone": "sprint-2",
+    "commit_id": "def456",
+    "author": "bob",
+    "committer": "bob",
+    "message": "fix: critical buffer issue",
+    "files_changed": 6,
+    "lines_added": 250,
+    "lines_deleted": 50,
+    "timestamp": "2025-06-07T10:00:00Z"
+  },
+  {
+    "project_id": "cybersec-core",
+    "milestone": "sprint-3",
+    "commit_id": "ghi789",
+    "author": "alice",
+    "committer": "alice",
+    "message": "refactor logging",
+    "files_changed": 2,
+    "lines_added": 30,
+    "lines_deleted": 5,
+    "timestamp": "2025-06-14T15:00:00Z"
+  }
+]

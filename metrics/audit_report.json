@@ -1,0 +1,10 @@
+{
+  "cybersec-core": {
+    "milestone": "sprint-3",
+    "anomaly_score": 0,
+    "flags": [],
+    "ml_predicted_anomaly": 0,
+    "risk_level": "OK",
+    "forecast_trend": "unknown"
+  }
+}

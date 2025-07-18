@@ -1,0 +1,10 @@
+[
+  {
+    "project_id": "cybersec-core",
+    "next_milestone": "sprint-4",
+    "predicted_velocity": 1.0,
+    "predicted_risk_score": 0.5,
+    "forecast": "at_risk",
+    "confidence": 1.0
+  }
+]

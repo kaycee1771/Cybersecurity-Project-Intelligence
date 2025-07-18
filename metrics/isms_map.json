@@ -1,0 +1,9 @@
+{
+  "cybersec-core": {
+    "A.14.2.2 \u2013 Secure Development Policy": "OK",
+    "A.12.6.1 \u2013 Technical Vulnerability Management": "OK",
+    "A.9.4.1 \u2013 Information Access Control": "OK",
+    "A.17.2.1 \u2013 Availability of Information Processing Facilities": "OK",
+    "A.18.2.3 \u2013 Technical Compliance Checking": "OK"
+  }
+}

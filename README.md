@@ -1,7 +1,7 @@
 # Cybersecurity Project Intelligence Dashboard (CPID)
 
 > **Real-time risk scoring and audit intelligence for cybersecurity projects.**  
-> Imagine when GitHub + ISO27001 compliance + AI anomaly detectionis fully automated.
+> Imagine when GitHub + ISO27001 compliance + AI anomaly detection is fully automated.
 
 ---
 
